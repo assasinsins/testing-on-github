@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block body %}
+<form action="/savedata" method="POST" enctype="multipart/form-data">
+  <div style="background-color: aquamarine; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    <marquee><h1>Hey Guys....!! Hope you all are doing well. Welcome to our booking page</h1></marquee>
+</div>
+<div style="text-align: center;padding: 28px;background-color: aquamarine; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    <h1>Bookings </h1>
+  </div>
+  <div style="padding-left: 140px;padding-right: 140px; background-color: aquamarine; color: black;">
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" name="Name" placeholder="Full Name">
+      <label for="floatingInput">Full name</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingInput" name="Email" placeholder="Email">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="date" class="form-control" id="floatingInput" name="Departure" placeholder="Departue Date">
+      <label for="floatingInput">Departure Date</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="date" class="form-control" id="floatingInput" name="Return" placeholder="Return Date">
+      <label for="floatingInput">Return Date</label>
+    </div>
+    <div>
+      <input type = "text" class = "form-control" id = "floatingInput" name="Return" placeholder="Type Your Destination Here">
+      <label for="cars">Choose your destination:</label>
+
+        <select name="cars" id="cars">
+        <option value="volvo">Dharamshala</option>
+        <option value="saab">Kullu</option>
+        <option value="mercedes">Kinnaur</option>
+        <option value="audi">Solan</option>
+        </select>
+    </div>
+    <br>
+    <div class="form-floating">
+      <input type="number" class="form-control" id="floatingPassword" name="Phonenumber" placeholder="Phone Number">
+      <label for="floatingPassword">Phone Number</label>
+    </div>
+    <!-- <div class="form-floating" style="padding: 4px;
+    margin-top: 10px;">
+
+      <textarea placeholder="Enter Your Message" id="" name="message" cols="159" rows="10"></textarea>
+
+    </div> -->
+<br>
+    <div class="form-floating">
+      <input type="file" class="form-control" id="floatingPassword" name = "img">
+      <label for="floatingPassword">Upload Aadhar Id</label>
+    </div>
+
+    <div style="text-align: center; padding: 11px">
+      <button type="submit" btn-lg class="btn btn-success">Success</button>
+    </div>
+  </div>
+</form>
+{% endblock body %}

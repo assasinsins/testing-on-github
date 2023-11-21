@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div style="background-color: aquamarine; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    <marquee><h1>Hey Guys....!! Hope you all are doing well. Please share your valuable feedback </h1></marquee>
+</div>
+<form>
+    <div style="text-align: center;padding: 28px;background-color: aquamarine;">
+      <h1>Feedback </h1>
+    </div>
+    <div style="padding-left: 140px;padding-right: 140px; background-color: aquamarine; color: black;">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" name="FullName" placeholder="Full Name">
+        <label for="floatingInput">Full name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" name="Email" placeholder="Email">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="number" class="form-control" id="floatingPassword" name="Phonenumber" placeholder="Phone Number">
+        <label for="floatingPassword">Phone Number</label>
+      </div>
+      <div class="form-floating" style="padding: 4px;
+      margin-top: 10px;">
+  
+        <textarea placeholder="Enter Your Feedback" id="" name="message" cols="159" rows="10"></textarea>
+  
+      </div>
+  
+      <div class="form-floating">
+        <input type="file" class="form-control" id="floatingPassword" name = "img" >
+        <label for="floatingPassword">share your best moment</label>
+      </div>
+  
+      <div style="text-align: center; padding: 11px">
+        <button type="submit" btn-lg class="btn btn-success">Submit</button>
+      </div>
+    </div> 
+  </form>
+{% endblock body %}

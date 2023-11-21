@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block body %}
+<form>
+  <div style="padding-left: 140px;padding-right: 140px; background-color: aquamarine; color: black;">
+    <div style="text-align: center;padding: 28px;background-color: aquamarine;">
+      <h1>Show Data </h1>
+    </div>
+
+    <div style="padding: 67px;">
+      <div class="row">
+
+        {% for data in alldata  %}
+        <div class="col-sm-6 mb-3 mb-sm-0" style="padding-bottom: 29px;">
+          <div class="card">
+            <div class="card-body">
+              <img src="{{data[6]}}" height="50%" width="100%">
+              <h5 class="card-title">Name = {{data[0]}} </h5>
+              <h5 class="card-title">Email = {{data[1]}} </h5>
+              <h5 class="card-title">DepartureDate = {{data[2]}} </h5>
+              <h5 class="card-title">ReturnDate = {{data[3]}} </h5>
+              <h5 class="card-title">Destination = {{data[4]}} </h5>
+              <h5 class="card-title">PhoneNumber = {{data[5]}} </h5>
+
+
+              <div style="display:flex;justify-content:space-around;">
+              
+                  <button type="submit" class="btn btn-primary">Update</button>
+                 
+                  <button type="submit" class="btn btn-danger">Delete</button>
+                  
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        
+  
+      </div>
+    </div>
+  </div>
+</form>
+
+
+
+
+{% endblock body %}
